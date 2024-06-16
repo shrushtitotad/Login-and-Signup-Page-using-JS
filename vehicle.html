@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="icon" type="x-images" href="icon.png">
+<link rel="stylesheet" href="vehicle.css">
+<link rel="stylesheet" href="website11 (1).html">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h2>Vehicle Sharing System</h2>
+        </div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="website11 (1).html">Products</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="actions">
+            <a href="#login">Login</a>
+            <a href="#register">Register</a>
+        </div>
+    </div>
+    <div class="background">
+        <video autoplay loop muted>
+            <source src="car.mp4" type="video/mp4">
+        </video>
+    </div>
+   
+    <div id="login">
+        <h2>Login</h2>
+        <div class="input-field">
+            <label>Username</label>
+            <input type="email" placeholder="Username@gmail.com">
+        </div>
+        <div class="input-field">
+            <label>Password</label>
+            <input type="password" placeholder="Your password">
+        </div>
+        <div class="btn">
+            <button>Login</button>
+        </div>
+    </div>
+    <div id="register">
+        <h2>Register Here !</h2>
+        <div class="input-field1">
+            <label>First Name</label><br>
+            <input type="text" placeholder="Enter Your First Name" id="firstName">
+        </div>
+        <div class="input-field1">
+            <label>Last Name</label><br>
+            <input type="text" placeholder="Enter Your Last Name" id="lastName">
+        </div>
+        <div class="input-field1">
+            <label>Email ID</label><br>
+            <input type="text" placeholder="Enter Your Email" id="emailAddress">
+        </div>
+        <div class="input-field1">
+            <label>Date Of Birth</label><br>
+            <input type="date" placeholder="Enter Your DOB">
+        </div>
+        <div class="input-field1">
+            <label>Mobile Number</label><br>
+            <input type="number" placeholder="Enter MobileNumber" id="mobileNumber">
+        </div>
+        <div class="btn">
+            <p id="errorMessage"></p>
+            <button onclick="validate()">Register</button>
+        </div>
+    </div>
+</body>
+<script src="vehicle.js"></script>
+</html>
